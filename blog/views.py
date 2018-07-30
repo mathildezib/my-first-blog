@@ -46,7 +46,7 @@ def post_edit(request, pk):
 
 
 def product(request):
-    return render(request, 'blog/test_produit.html')
+    return render(request, 'blog/product.html')
 
 
 
