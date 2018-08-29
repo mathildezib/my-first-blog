@@ -49,4 +49,5 @@ def product(request):
     return render(request, 'blog/product.html')
 
 
-
+def product(request):
+    return render(request, 'blog/product_bis.html')

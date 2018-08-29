@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^post/new/$', views.post_new, name='post_new'),
     url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
     url(r'^dp/B000E5RKOA', views.product, name='product'),
+    url(r'^dp/B00SU78O6W', views.product_bis, name='product_bis'),
 
 ]
