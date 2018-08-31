@@ -17,3 +17,16 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class ProductLookForEan(models.Model):
+    productlookforean_id = models.AutoField(primary_key=True)
+    product = models.ForeignKey('Produit', db_column='product_id_fk')
+    marketplace = models.ForeignKey('Plateforme', blank=False, null=False, db_column='marketplace_id_fk')
+
+    class Meta:
+        app_label = 'cia'
+        db_table = 'productlookforean'
+
+    def __str__(self):
+        return str(self.product) + ' - ' + str(self.marketplace)
